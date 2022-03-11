@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+  <head> <!-- Meta tags & BootStrap Content Delivery Network API -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+     <!-- Bootstrap 4 Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- <script> src="/scripts/validation.js" </script> -->
+
+        <title>Registration</title>
+  </head>
+
+  <body>
+    <!--Main Nav Bar-->
+    <div class="bg-dark">
+        <nav class="container navbar navbar-expand-sm bg-dark navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-free.svg" alt="Logo" class="ml-5" style="width:35px;"><br>
+            Prime Services
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <div class="collapse navbar-collapse ml-5" id="collapsibleNavbar">
+        <ul class="navbar-nav ">
+            <li class="nav-item pr-5">
+              <a class="nav-link " href="index.html"><h4> <Small> Home </Small></h4></a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link active" href="registration.html"><h4> <Small> Registration </Small></h4></a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="login.html"><h4> <Small> Edit Profile </Small></h4></a>
+            </li>
+           
+          </ul>
+
+          <a  href="login.html" class="ml-auto align-bottom pr-1 text-white decoration-none">Login </a>
+          <a href="login.html" class=" fa fa-fw fa-user pl-1 text-white"></a>
+        </nav>
+        </div>
+    </div>
+
+    <!--Form-->
+    <form action="#" class="needs-validation container-md mt-5" id="clearForm" novalidate>
+      <h4 class="text-center mb-5 text-primary">REGISTRATION</h4>
+      
+      <div class="form-group">
+        <label for="uname" ><h6>Username:</h6></label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="fname" ><h6>First Name:</h6></label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="lname" ><h6>Last Name:</h6></label>
+        <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" ><h6>Email Address:</h6></label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="pwd" > <h6>Account Number:</h6></label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <label for="male" class="my-3"><h6>Gender:</h6></label>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="male" name="male" value="male">
+        <label class="custom-control-label" for="customRadio">Male</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="female" name="female" value="female">
+        <label class="custom-control-label" for="customRadio2">Female</label>
+      </div>
+
+      <div class="form-group">
+        <label for="pwd" ><h6>Password:</h6></label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <input type="password" class="form-control mt-2" id="pwd" placeholder="Verify password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      
+      <h5 class="text-center mb-5 text-primary">Password Recovery Secuirty Questions</h5>
+
+
+      <!--Question 1-->
+      <div class="form-group">
+        <label for="ques1"> <h6>Question #1</h6></label>
+        <select class="form-control" id="ques1" name="ques1">
+          <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+          <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+          <option value="What was your first car?">What was your first car?</option>
+          <option value="What is the name of the town where you were born?">What is the name of the town where you were born?</option>
+          <option value="When you were young, what did you want to be when you grew up?">When you were young, what did you want to be when you grew up?</option>
+          <option value="Who was your childhood hero?">Who was your childhood hero?</option>
+          <option value="Where was your best family vacation as a kid?">Where was your best family vacation as a kid?</option>
+        </select>      
+      </div>
+      <div class="form-group">       
+        <input type="text" class="form-control " id="ans1" name="ans1" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <!--Question 1-->
+      <div class="form-group">
+        <label for="ques2"> <h6>Question #2</h6></label>
+        <select class="form-control" id="ques2" name="ques2">
+          <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+          <option value="What was your first car?">What was your first car?</option>
+          <option value="What is the name of the town where you were born?">What is the name of the town where you were born?</option>
+          <option value="When you were young, what did you want to be when you grew up?">When you were young, what did you want to be when you grew up?</option>
+          <option value="In what city were you born?">In what city were you born?</option>
+          <option value="Who was your childhood hero?">Who was your childhood hero?</option>
+          <option value="Where was your best family vacation as a kid?">Where was your best family vacation as a kid?</option>
+        </select>      
+      </div>
+      <div class="form-group">       
+        <input type="text" class="form-control " id="ans1" name="ans1" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <!--Question 1-->
+      <div class="form-group">
+        <label for="ques3"> <h6>Question #3</h6></label>
+        <select class="form-control" id="ques3" name="ques3">
+          <option value="What was your first car?">What was your first car?</option>
+          <option value="What is the name of the town where you were born?">What is the name of the town where you were born?</option>
+          <option value="When you were young, what did you want to be when you grew up?">When you were young, what did you want to be when you grew up?</option>
+          <option value="Who was your childhood hero?">Who was your childhood hero?</option>
+          <option value="What was your favorite food as a child?">What was your favorite food as a child?</option>
+          <option value="Where was your best family vacation as a kid?">Where was your best family vacation as a kid?</option>
+        </select>      
+      </div>
+      <div class="form-group">       
+        <input type="text" class="form-control " id="ans1" name="ans1" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="text-center pt-2 d-flex justify-content-around">
+        <input type="button" class="btn btn-secondary" onclick="myFunction()" value=" Reset ">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+
+
+    </form>
+
+    <script>
+      function myFunction() {
+        document.getElementById("clearForm").reset();
+      }
+      </script>
+
+    <!--Footer-->
+  <footer class="bg-dark pb-1">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-4">
+                <ul>
+                    <ul> <img src="images/instagramlogo.png"  alt="" style="width:30px; "> <i  style="font-size: 30px;"></i><a class="text-white" href="#"> @PrimeServices</a></ul>
+                    <ul> <img src="images/734367_media_online_social_twitter_icon.png"  alt="" style="width:30px;"><i style="font-size: 30px;"></i><a class="text-white"href="#"> @PrimeServices</a></ul>
+                    <ul><img src="images/734399_facebook_media_online_social_icon.png"  alt="" style="width:30px;"><i  style="font-size: 30px;"></i><a class="text-white"href="#"> @PrimeServices</a></ul>
+                    
+                </ul>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 ">
+              <ul>
+                <ul> <img src="images/phone_social_icon.png"  alt="" style="width:30px; "> <i  style="font-size: 30px;"></i><a class="text-white" href="#"> 1715-245-6859</a></ul>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p class="text-white text-center">©2022 | Prime Services</p>
+    </div>
+</footer>
+    
+    <!--JS Validation Script-->
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Get the forms we want to add validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    
+
+
+ </body>
+ </html>

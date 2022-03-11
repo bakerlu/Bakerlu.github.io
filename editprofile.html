@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+  <head> <!-- Meta tags & BootStrap Content Delivery Network API -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+     <!-- Bootstrap 4 Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- <script> src="/scripts/validation.js" </script> -->
+
+        <title>View & Edit Profile</title>
+  </head>
+
+  <body>
+      <!--Main Nav Bar-->
+     
+      <div class="bg-dark ">
+        
+        <nav class="container-md navbar navbar-expand-sm bg-dark navbar-dark  ">
+          <a class="navbar-brand no-margin" href="index.html">
+            <img src="images/logo-free.svg" alt="Logo" class="ml-5" style="width:35px;"><br>
+           Prime Services
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <div class="collapse navbar-collapse pl-5 " id="collapsibleNavbar">
+        <ul class="navbar-nav ">
+            <li class="nav-item pr-5">
+              <a class="nav-link " href="index.html"><h4> <Small> Home </Small></h4></a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link " href="registration.html"><h4> <Small> Registration </Small></h4></a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link active " href="#"><h4> <Small> Edit Profile </Small></h4></a>
+            </li>
+      
+          </ul>
+          <p class="ml-auto align-bottom pr-1 text-white">Hi Micah </p>
+          <a href="#" class=" fa fa-fw fa-user "><p></p></a>
+        </div>
+        </nav>
+
+        
+    </div>
+  
+
+    <!--Form-->
+    
+    <form action="#" class="needs-validation container-md my-5" novalidate>
+      <h4 class="text-center mb-5 text-primary">VIEW & EDIT YOUR PROFILE</h4>
+
+      <p>Last Login: 14-Feb-2022</p>
+      
+      <div class="form-group">
+        <label for="uname" ><h6>Username:</h6></label>
+        <input type="text" class="form-control" id="uname" value="MikeHussle" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="fname" ><h6>First Name:</h6></label>
+        <input type="text" class="form-control" id="fname" value="Micah" name="fname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group">
+        <label for="lname" ><h6>Middle Name:</h6></label>
+        <input type="text" class="form-control" id="lname" value="Orlando" name="lname" >
+      </div>
+
+      <div class="form-group">
+        <label for="lname" ><h6>Last Name:</h6></label>
+        <input type="text" class="form-control" id="lname" value="St. Hill" name="lname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+     
+
+      <div class="form-group">
+        <label for="acct" > <h6>Account Number:</h6></label>
+        <input type="acct" class="form-control bg-light" id="acct" value="1118" name="acct" disabled>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <label for="male" class="my-3"><h6>Gender:</h6></label>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="male" name="male" value="male" checked>
+        <label class="custom-control-label" for="customRadio">Male</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="female" name="female" value="female">
+        <label class="custom-control-label" for="customRadio2">Female</label>
+      </div>
+
+     
+
+      <div class="text-center pt-2">
+        <button type="submit" class="btn btn-primary">Submit Changes</button>
+      </div>
+    </form>
+  
+
+
+    <!--Password-->
+    <div class="bg-light py-2">
+    <form action="#" class="needs-validation container-md my-2" novalidate>
+      
+      <div class="form-group">
+        <p>Last Password Change: 14-Feb-2022</p>
+        <label for="pwd" ><h6>Password:</h6></label>
+        <input type="password" class="form-control" id="pwd" placeholder="Current password" name="pswd" required>
+        <input type="password" class="form-control mt-2" id="pwd" placeholder="Enter new password" name="pswd" required>
+        <input type="password" class="form-control mt-2" id="pwd" placeholder="Verify password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="text-center pt-2">
+        <button type="submit" class="btn btn-primary">Update Password</button>
+      </div>
+    </form>
+  </div>
+  
+
+<!--Manage Emails-->
+
+    <div class="container-md mt-5">
+      <label for="email" ><h5>Manage Email Addresses:</h5></label>
+      <div class="row" >
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="text-primary">Preferred</h6><br>
+          <p>micahhill@gmail.com</p><br>
+          <a href="#" data-toggle="modal" data-target="#emailModal">Edit</a> <span class="text-primary">|</span> <a href="#"> Remove</a>
+        </div>
+      </div>
+          <!-- Edit Email Modal -->
+          <div class="modal fade" id="emailModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Edit Email Address</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                  <label for="emailEdit">Email </label>
+                  <input class="form-control" type="text" id="emailEdit" name="emailEdit">
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="invisible">.</h6><br>
+          <p>micah@gconstruction.com</p><br>
+          <a href="#" data-toggle="modal" data-target="#emailModal"> Edit</a> <span class="text-primary">|</span> <a href="#">Remove</a> <span class="text-primary">|</span> <a href="#">Set as Default</a>
+        </div>
+      </div>
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="invisible">.</h6><br>
+          <p class="invisible">.</p><br>
+          <a href="#" data-toggle="modal" data-target="#createEmailModal"> Add Email</a>
+        </div>
+      </div>
+
+      <!-- Create Email Modal -->
+      <div class="modal fade" id="createEmailModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add a New Email Address</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+
+              <label for="city">Email </label>
+              <input class="form-control" type="text" id="emailadd" name="emailadd">
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!--Manage Mailing Addresses-->
+    <div class="container-md mt-5 pt-4">
+      <label for="email" ><h5>Manage Mailing Addresses:</h5></label>
+      <div class="row" >
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="text-primary pb-1">Preferred</h6>
+          <p class="mb-0">Dolphin Park #32</p>
+          <p class="m-0">New York, 11123</p>
+          <p class="mt-0 ">United States</p>
+          <a href="#" data-toggle="modal" data-target="#editAddModal">Edit</a> <span class="text-primary">|</span> <a href="#">Remove</a>
+        </div>
+      </div>
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="invisible">.</h6>
+          <p class="m-0">6452, Hammington Ave</p>
+          <p class="m-0">Connecticut, 25684</p>
+          <p class="mt-0">United States</p>
+          <a href="#" data-toggle="modal" data-target="#editAddModal"> Edit</a> <span class="text-primary">|</span> <a href="#">Remove</a>  <span class="text-primary">|</span> <a href="#">Set as Default</a>
+        </div>
+      </div>
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="invisible">.</h6><br>
+          <p class="invisible ">.</p><br>
+          <a href="#" data-toggle="modal" data-target="#addAddiModal"> Add Mail Address</a>
+        </div>
+      </div>
+
+      <!-- Edit Mail Address Modal -->
+      <div class="modal fade" id="editAddModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Mailing Address</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <label for="Add1">Address Line 1</label>
+              <input class="form-control" type="text" id="Add1" name="Add1">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <label for="Add2">Address Line 2</label>
+              <input class="form-control" type="text" id="Add2" name="Add2">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <label for="city">City </label>
+              <input class="form-control" type="text" id="city" name="city">
+            </div>
+
+             <!-- Modal body -->
+             <div class="modal-body ">
+              <label for="pcode">Postal Code</label>
+              <input class="form-control" type="text" id="pcode" name="pcode">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <label for="Country">Country</label>
+              <input class="form-control" type="text" id="Country" name="Country">
+            </div>
+
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+       <!-- Add Mail Address Modal -->
+       <div class="modal fade" id="addAddiModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add Mailing Address</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <label for="Add1">Address Line 1</label>
+              <input class="form-control" type="text" id="Add1" name="Add1">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <label for="Add2">Address Line 2</label>
+              <input class="form-control" type="text" id="Add2" name="Add2">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <label for="city">City </label>
+              <input class="form-control" type="text" id="city" name="city">
+            </div>
+
+             <!-- Modal body -->
+             <div class="modal-body ">
+              <label for="pcode">Postal Code</label>
+              <input class="form-control" type="text" id="pcode" name="pcode">
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <label for="Country">Country</label>
+              <input class="form-control" type="text" id="Country" name="Country">
+            </div>
+
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+    
+
+     <!--Manage Phone Numbers-->
+     <div class="container-md mt-5 pt-4">
+      <label for="email" ><h5>Manage Contact Numbers:</h5></label>
+      <div class="row" >
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="text-primary">Preferred</h6>
+          <p class="m-0 pt-2">Mobile</p>
+          <p class="m-0">1715-235-5624</p><br>
+          <a href="#" data-toggle="modal" data-target="#editContactModal">Edit</a> <span class="text-primary">|</span> <a href="#">Remove</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 " >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="invisible">.</h6>
+          <p class="m-0 pt-2">Office</p>
+          <p class="m-0">1715-235-5624</p><br>
+          <a href="#" data-toggle="modal" data-target="#editContactModal">Edit</a> <span class="text-primary">|</span> <a href="#">Remove</a> <span class="text-primary">| </span><a href="#">Set as Default</a>
+        </div>
+      </div>
+
+      <div class="col-md-4" >
+        <div class="p-2 border" style=height:150px>
+          <h6 class="invisible pt-3">.</h6>
+          <p class="invisible">.</p><br>
+          <a href="#" data-toggle="modal" data-target="#addContactModal"> Add Contact Number</a>
+        </div>
+      </div>
+
+      <!-- Edit Contact Modal -->
+      <div class="modal fade" id="editContactModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Contact Number</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio1">
+                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Home
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio2">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Office
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio3">
+                  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Mobile
+                </label>
+              </div>
+              <input type="text">
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Add contact Modal -->
+      <div class="modal fade" id="addContactModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add Contact Number</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio1">
+                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Home
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio2">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Office
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio3">
+                  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Mobile
+                </label>
+              </div>
+              <input type="text">
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  
+    <div class="bg-light pb-2">
+    <div class="container-md my-5 py-5 ">
+      <div class="text-center ">
+        <button onclick="location.href='/editquestions.html'" type="submit" class="btn btn-info ">Edit Security Questions</button>
+      </div>
+    </div>
+  </div>
+  
+
+    <!--Footer-->
+  <footer class="bg-dark">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-4">
+                <ul>
+                    <ul> <img src="images/instagramlogo.png"  alt="" style="width:30px; "> <i  style="font-size: 30px;"></i><a class="text-white" href="#"> @PrimeServices</a></ul>
+                    <ul> <img src="images/734367_media_online_social_twitter_icon.png"  alt="" style="width:30px;"><i style="font-size: 30px;"></i><a class="text-white"href="#"> @PrimeServices</a></ul>
+                    <ul><img src="images/734399_facebook_media_online_social_icon.png"  alt="" style="width:30px;"><i  style="font-size: 30px;"></i><a class="text-white"href="#"> @PrimeServices</a></ul>
+                    
+                </ul>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 ">
+              <ul>
+                <ul> <img src="images/phone_social_icon.png"  alt="" style="width:30px; "> <i  style="font-size: 30px;"></i><a class="text-white" href="#"> 1715-245-6859</a></ul>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p class="text-white text-center">©2022 | Prime Services</p>
+    </div>
+</footer>
+    
+    <!--JS Validation Script-->
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Get the forms we want to add validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+
+    
+
+
+ </body>
+ </html>
